@@ -5,8 +5,7 @@
 
     <meta charset="UTF-8">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>AK TURBANATORS</title>
 
@@ -83,7 +82,7 @@
 
 
         /* ===============================
-           HAMBURGER MENU
+           HAMBURGER
         =============================== */
 
         .hamburger {
@@ -150,7 +149,7 @@
         }
 
 
-        /* SEARCH ICON */
+        /* SEARCH */
 
         .search {
 
@@ -179,13 +178,14 @@
             background: #403a34;
 
             right: -6px;
+
             bottom: 0;
 
             transform: rotate(45deg);
         }
 
 
-        /* BAG ICON */
+        /* BAG */
 
         .bag {
 
@@ -243,20 +243,18 @@
             overflow: hidden;
 
 
-            /* =================================
-               PALACE BACKGROUND IMAGE
-            ================================= */
+            /* YOUR GITHUB IMAGE */
 
             background-image:
-                url("assets/turban-bg.jpg");
+                url("assets:turban-bg.JPG");
 
 
-            /* Makes image cover full screen */
+            /* IMAGE COVERS ENTIRE SCREEN */
 
             background-size: cover;
 
 
-            /* Keeps the centre of image visible */
+            /* CENTRES IMAGE */
 
             background-position: center center;
 
@@ -277,10 +275,10 @@
 
             inset: 0;
 
-            /* Change 0.22 to make image darker/lighter */
+            /* Makes text easier to read */
 
             background:
-                rgba(0, 0, 0, 0.22);
+                rgba(0, 0, 0, 0.28);
 
             z-index: 1;
         }
@@ -424,8 +422,6 @@
         @media (max-width: 768px) {
 
 
-            /* HEADER */
-
             .header {
 
                 height: 82px;
@@ -434,8 +430,6 @@
             }
 
 
-            /* LOGO */
-
             .logo {
 
                 font-size: 18px;
@@ -443,8 +437,6 @@
                 letter-spacing: 3px;
             }
 
-
-            /* ICONS */
 
             .header-right {
 
@@ -468,8 +460,6 @@
             }
 
 
-            /* MENU */
-
             .hamburger {
 
                 width: 28px;
@@ -478,7 +468,7 @@
             }
 
 
-            /* HERO */
+            /* HERO MOBILE */
 
             .hero {
 
@@ -486,22 +476,15 @@
 
                 min-height: 700px;
 
-                /*
-                   Centre the palace image
-                   on mobile
-                */
-
                 background-position:
                     center center;
             }
 
 
-            /* OVERLAY */
-
             .hero::after {
 
                 background:
-                    rgba(0, 0, 0, 0.25);
+                    rgba(0, 0, 0, 0.28);
             }
 
 
@@ -581,7 +564,7 @@
     <header class="header">
 
 
-        <!-- HAMBURGER -->
+        <!-- HAMBURGER MENU -->
 
         <div class="hamburger">
 
@@ -603,7 +586,7 @@
         </a>
 
 
-        <!-- RIGHT ICONS -->
+        <!-- SEARCH + BAG -->
 
         <div class="header-right">
 
@@ -628,8 +611,6 @@
         <div class="hero-content">
 
 
-            <!-- BRAND NAME -->
-
             <div class="hero-box">
 
                 <h1>
@@ -638,8 +619,6 @@
 
             </div>
 
-
-            <!-- TAGLINE -->
 
             <p class="tagline">
 
@@ -668,7 +647,6 @@
             <h2>
 
                 | STYLE<br>
-
                 WITH IDENTITY |
 
             </h2>
