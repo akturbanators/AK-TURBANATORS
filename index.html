@@ -11,7 +11,8 @@
     <title>AK TURBANATORS</title>
 
 
-    <!-- FONT -->
+    <!-- GOOGLE FONT -->
+
     <link rel="preconnect"
           href="https://fonts.googleapis.com">
 
@@ -24,6 +25,10 @@
 
 
     <style>
+
+        /* ===============================
+           RESET
+        =============================== */
 
         * {
             margin: 0;
@@ -44,14 +49,13 @@
         }
 
 
-        /* =================================
+        /* ===============================
            HEADER
-        ================================= */
+        =============================== */
 
         .header {
 
             height: 95px;
-
             width: 100%;
 
             position: absolute;
@@ -71,19 +75,20 @@
 
             background: rgba(239, 234, 224, 0.88);
 
-            backdrop-filter: blur(4px);
+            backdrop-filter: blur(5px);
 
             border-bottom: 1px solid
                 rgba(50, 45, 40, 0.18);
         }
 
 
-        /* HAMBURGER */
+        /* ===============================
+           HAMBURGER MENU
+        =============================== */
 
         .hamburger {
 
             width: 34px;
-
             height: 25px;
 
             display: flex;
@@ -99,16 +104,15 @@
         .hamburger span {
 
             width: 100%;
-
-            height: 1px;
+            height: 1.5px;
 
             background: #302b27;
         }
 
 
-        /* =================================
+        /* ===============================
            LOGO
-        ================================= */
+        =============================== */
 
         .logo {
 
@@ -132,15 +136,9 @@
         }
 
 
-        .logo span {
-
-            color: #403a34;
-        }
-
-
-        /* =================================
+        /* ===============================
            RIGHT ICONS
-        ================================= */
+        =============================== */
 
         .header-right {
 
@@ -152,10 +150,11 @@
         }
 
 
+        /* SEARCH ICON */
+
         .search {
 
             width: 24px;
-
             height: 24px;
 
             border: 1.5px solid #403a34;
@@ -163,6 +162,8 @@
             border-radius: 50%;
 
             position: relative;
+
+            cursor: pointer;
         }
 
 
@@ -173,23 +174,22 @@
             position: absolute;
 
             width: 9px;
-
             height: 1.5px;
 
             background: #403a34;
 
             right: -6px;
-
             bottom: 0;
 
             transform: rotate(45deg);
         }
 
 
+        /* BAG ICON */
+
         .bag {
 
             width: 22px;
-
             height: 22px;
 
             border: 1.5px solid #403a34;
@@ -197,6 +197,8 @@
             border-radius: 2px;
 
             position: relative;
+
+            cursor: pointer;
         }
 
 
@@ -207,7 +209,6 @@
             position: absolute;
 
             width: 9px;
-
             height: 6px;
 
             border: 1.5px solid #403a34;
@@ -216,15 +217,14 @@
 
             border-radius: 8px 8px 0 0;
 
-            top: -6px;
-
+            top: -7px;
             left: 5px;
         }
 
 
-        /* =================================
-           HERO
-        ================================= */
+        /* ===============================
+           HERO SECTION
+        =============================== */
 
         .hero {
 
@@ -242,16 +242,32 @@
 
             overflow: hidden;
 
+
+            /* =================================
+               PALACE BACKGROUND IMAGE
+            ================================= */
+
             background-image:
                 url("assets/turban-bg.jpg");
 
+
+            /* Makes image cover full screen */
+
             background-size: cover;
 
-            background-position: center;
+
+            /* Keeps the centre of image visible */
+
+            background-position: center center;
+
+
+            background-repeat: no-repeat;
         }
 
 
-        /* VERY SUBTLE IMAGE DARKENING */
+        /* ===============================
+           DARK OVERLAY
+        =============================== */
 
         .hero::after {
 
@@ -261,15 +277,18 @@
 
             inset: 0;
 
-            background: rgba(0, 0, 0, 0.16);
+            /* Change 0.22 to make image darker/lighter */
+
+            background:
+                rgba(0, 0, 0, 0.22);
 
             z-index: 1;
         }
 
 
-        /* =================================
-           CENTER HERO TEXT
-        ================================= */
+        /* ===============================
+           HERO CONTENT
+        =============================== */
 
         .hero-content {
 
@@ -283,9 +302,13 @@
 
             width: 90%;
 
-            max-width: 700px;
+            max-width: 800px;
         }
 
+
+        /* ===============================
+           AK TURBANATORS BOX
+        =============================== */
 
         .hero-box {
 
@@ -294,7 +317,7 @@
             padding: 27px 58px;
 
             border: 1px solid
-                rgba(255,255,255,0.85);
+                rgba(255, 255, 255, 0.9);
 
             margin-bottom: 38px;
         }
@@ -312,6 +335,10 @@
         }
 
 
+        /* ===============================
+           TAGLINE
+        =============================== */
+
         .tagline {
 
             font-size: 17px;
@@ -322,18 +349,14 @@
 
             line-height: 1.8;
 
-            color: rgba(
-                255,
-                255,
-                255,
-                0.95
-            );
+            color:
+                rgba(255, 255, 255, 0.95);
         }
 
 
-        /* =================================
-           SECOND SECTION
-        ================================= */
+        /* ===============================
+           INTRO SECTION
+        =============================== */
 
         .intro {
 
@@ -361,11 +384,8 @@
 
         .intro h2 {
 
-            font-size: clamp(
-                48px,
-                7vw,
-                82px
-            );
+            font-size:
+                clamp(48px, 7vw, 82px);
 
             font-weight: 300;
 
@@ -397,12 +417,14 @@
         }
 
 
-        /* =================================
-           MOBILE
-        ================================= */
+        /* ===============================
+           MOBILE VERSION
+        =============================== */
 
         @media (max-width: 768px) {
 
+
+            /* HEADER */
 
             .header {
 
@@ -412,6 +434,8 @@
             }
 
 
+            /* LOGO */
+
             .logo {
 
                 font-size: 18px;
@@ -419,6 +443,8 @@
                 letter-spacing: 3px;
             }
 
+
+            /* ICONS */
 
             .header-right {
 
@@ -442,6 +468,8 @@
             }
 
 
+            /* MENU */
+
             .hamburger {
 
                 width: 28px;
@@ -450,13 +478,34 @@
             }
 
 
+            /* HERO */
+
             .hero {
 
-                min-height: 100vh;
+                height: 100svh;
 
-                background-position: center;
+                min-height: 700px;
+
+                /*
+                   Centre the palace image
+                   on mobile
+                */
+
+                background-position:
+                    center center;
             }
 
+
+            /* OVERLAY */
+
+            .hero::after {
+
+                background:
+                    rgba(0, 0, 0, 0.25);
+            }
+
+
+            /* HERO BOX */
 
             .hero-box {
 
@@ -474,6 +523,8 @@
             }
 
 
+            /* TAGLINE */
+
             .tagline {
 
                 font-size: 12px;
@@ -483,6 +534,8 @@
                 line-height: 2;
             }
 
+
+            /* INTRO */
 
             .intro {
 
@@ -528,7 +581,7 @@
     <header class="header">
 
 
-        <!-- MENU -->
+        <!-- HAMBURGER -->
 
         <div class="hamburger">
 
@@ -550,7 +603,7 @@
         </a>
 
 
-        <!-- ICONS -->
+        <!-- RIGHT ICONS -->
 
         <div class="header-right">
 
@@ -566,7 +619,7 @@
 
 
     <!-- ===============================
-         HERO
+         HERO SECTION
     ================================ -->
 
     <section class="hero">
@@ -574,6 +627,8 @@
 
         <div class="hero-content">
 
+
+            <!-- BRAND NAME -->
 
             <div class="hero-box">
 
@@ -583,6 +638,8 @@
 
             </div>
 
+
+            <!-- TAGLINE -->
 
             <p class="tagline">
 
@@ -604,12 +661,14 @@
 
     <section class="intro">
 
+
         <div class="intro-inner">
 
 
             <h2>
 
                 | STYLE<br>
+
                 WITH IDENTITY |
 
             </h2>
@@ -627,6 +686,7 @@
 
 
         </div>
+
 
     </section>
 
