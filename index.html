@@ -1,18 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
 
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
 
-    <title>AK Turbanators</title>
+    <title>AK TURBANATORS</title>
+
+
+    <!-- FONT -->
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap"
+          rel="stylesheet">
+
 
     <style>
-
-        /* =========================
-           RESET
-        ========================= */
 
         * {
             margin: 0;
@@ -20,26 +31,606 @@
             box-sizing: border-box;
         }
 
+
         html {
             scroll-behavior: smooth;
         }
 
+
         body {
-            font-family: Arial, Helvetica, sans-serif;
-            background: #06133d;
-            color: white;
+            font-family: 'Montserrat', sans-serif;
+            background: #eee8dc;
+            color: #28231f;
         }
 
 
-        /* =========================
-           HERO / FIRST SLIDE
-        ========================= */
+        /* =================================
+           HEADER
+        ================================= */
+
+        .header {
+
+            height: 95px;
+
+            width: 100%;
+
+            position: absolute;
+
+            top: 0;
+            left: 0;
+
+            z-index: 20;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+
+            padding: 0 4.5%;
+
+            background: rgba(239, 234, 224, 0.88);
+
+            backdrop-filter: blur(4px);
+
+            border-bottom: 1px solid
+                rgba(50, 45, 40, 0.18);
+        }
+
+
+        /* HAMBURGER */
+
+        .hamburger {
+
+            width: 34px;
+
+            height: 25px;
+
+            display: flex;
+
+            flex-direction: column;
+
+            justify-content: space-between;
+
+            cursor: pointer;
+        }
+
+
+        .hamburger span {
+
+            width: 100%;
+
+            height: 1px;
+
+            background: #302b27;
+        }
+
+
+        /* =================================
+           LOGO
+        ================================= */
+
+        .logo {
+
+            position: absolute;
+
+            left: 50%;
+
+            transform: translateX(-50%);
+
+            text-decoration: none;
+
+            color: #403a34;
+
+            font-size: 26px;
+
+            font-weight: 400;
+
+            letter-spacing: 5px;
+
+            white-space: nowrap;
+        }
+
+
+        .logo span {
+
+            color: #403a34;
+        }
+
+
+        /* =================================
+           RIGHT ICONS
+        ================================= */
+
+        .header-right {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 25px;
+        }
+
+
+        .search {
+
+            width: 24px;
+
+            height: 24px;
+
+            border: 1.5px solid #403a34;
+
+            border-radius: 50%;
+
+            position: relative;
+        }
+
+
+        .search::after {
+
+            content: "";
+
+            position: absolute;
+
+            width: 9px;
+
+            height: 1.5px;
+
+            background: #403a34;
+
+            right: -6px;
+
+            bottom: 0;
+
+            transform: rotate(45deg);
+        }
+
+
+        .bag {
+
+            width: 22px;
+
+            height: 22px;
+
+            border: 1.5px solid #403a34;
+
+            border-radius: 2px;
+
+            position: relative;
+        }
+
+
+        .bag::before {
+
+            content: "";
+
+            position: absolute;
+
+            width: 9px;
+
+            height: 6px;
+
+            border: 1.5px solid #403a34;
+
+            border-bottom: none;
+
+            border-radius: 8px 8px 0 0;
+
+            top: -6px;
+
+            left: 5px;
+        }
+
+
+        /* =================================
+           HERO
+        ================================= */
 
         .hero {
-            min-height: 100vh;
-            width: 100%;
+
+            height: 100vh;
+
+            min-height: 650px;
 
             position: relative;
 
             display: flex;
-           
+
+            align-items: center;
+
+            justify-content: center;
+
+            overflow: hidden;
+
+            background-image:
+                url("assets/turban-bg.jpg");
+
+            background-size: cover;
+
+            background-position: center;
+        }
+
+
+        /* VERY SUBTLE IMAGE DARKENING */
+
+        .hero::after {
+
+            content: "";
+
+            position: absolute;
+
+            inset: 0;
+
+            background: rgba(0, 0, 0, 0.16);
+
+            z-index: 1;
+        }
+
+
+        /* =================================
+           CENTER HERO TEXT
+        ================================= */
+
+        .hero-content {
+
+            position: relative;
+
+            z-index: 5;
+
+            text-align: center;
+
+            color: white;
+
+            width: 90%;
+
+            max-width: 700px;
+        }
+
+
+        .hero-box {
+
+            display: inline-block;
+
+            padding: 27px 58px;
+
+            border: 1px solid
+                rgba(255,255,255,0.85);
+
+            margin-bottom: 38px;
+        }
+
+
+        .hero-box h1 {
+
+            font-size: 24px;
+
+            font-weight: 300;
+
+            letter-spacing: 7px;
+
+            white-space: nowrap;
+        }
+
+
+        .tagline {
+
+            font-size: 17px;
+
+            font-weight: 300;
+
+            letter-spacing: 5px;
+
+            line-height: 1.8;
+
+            color: rgba(
+                255,
+                255,
+                255,
+                0.95
+            );
+        }
+
+
+        /* =================================
+           SECOND SECTION
+        ================================= */
+
+        .intro {
+
+            min-height: 560px;
+
+            background: #eee8dc;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            text-align: center;
+
+            padding: 90px 8%;
+        }
+
+
+        .intro-inner {
+
+            max-width: 850px;
+        }
+
+
+        .intro h2 {
+
+            font-size: clamp(
+                48px,
+                7vw,
+                82px
+            );
+
+            font-weight: 300;
+
+            letter-spacing: 4px;
+
+            line-height: 1.15;
+
+            color: #40372f;
+
+            margin-bottom: 55px;
+        }
+
+
+        .intro p {
+
+            max-width: 650px;
+
+            margin: auto;
+
+            font-size: 17px;
+
+            line-height: 2;
+
+            letter-spacing: 2px;
+
+            font-weight: 300;
+
+            color: #756b61;
+        }
+
+
+        /* =================================
+           MOBILE
+        ================================= */
+
+        @media (max-width: 768px) {
+
+
+            .header {
+
+                height: 82px;
+
+                padding: 0 7%;
+            }
+
+
+            .logo {
+
+                font-size: 18px;
+
+                letter-spacing: 3px;
+            }
+
+
+            .header-right {
+
+                gap: 17px;
+            }
+
+
+            .search {
+
+                width: 20px;
+
+                height: 20px;
+            }
+
+
+            .bag {
+
+                width: 19px;
+
+                height: 19px;
+            }
+
+
+            .hamburger {
+
+                width: 28px;
+
+                height: 21px;
+            }
+
+
+            .hero {
+
+                min-height: 100vh;
+
+                background-position: center;
+            }
+
+
+            .hero-box {
+
+                padding: 19px 25px;
+
+                margin-bottom: 30px;
+            }
+
+
+            .hero-box h1 {
+
+                font-size: 16px;
+
+                letter-spacing: 4px;
+            }
+
+
+            .tagline {
+
+                font-size: 12px;
+
+                letter-spacing: 3px;
+
+                line-height: 2;
+            }
+
+
+            .intro {
+
+                min-height: 500px;
+
+                padding: 70px 8%;
+            }
+
+
+            .intro h2 {
+
+                font-size: 48px;
+
+                letter-spacing: 2px;
+
+                margin-bottom: 40px;
+            }
+
+
+            .intro p {
+
+                font-size: 13px;
+
+                line-height: 2;
+
+                letter-spacing: 1.5px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- ===============================
+         HEADER
+    ================================ -->
+
+    <header class="header">
+
+
+        <!-- MENU -->
+
+        <div class="hamburger">
+
+            <span></span>
+
+            <span></span>
+
+            <span></span>
+
+        </div>
+
+
+        <!-- LOGO -->
+
+        <a href="#" class="logo">
+
+            AK TURBANATORS
+
+        </a>
+
+
+        <!-- ICONS -->
+
+        <div class="header-right">
+
+            <div class="search"></div>
+
+            <div class="bag"></div>
+
+        </div>
+
+
+    </header>
+
+
+
+    <!-- ===============================
+         HERO
+    ================================ -->
+
+    <section class="hero">
+
+
+        <div class="hero-content">
+
+
+            <div class="hero-box">
+
+                <h1>
+                    AK TURBANATORS
+                </h1>
+
+            </div>
+
+
+            <p class="tagline">
+
+                The Art Of Turban Styling
+
+            </p>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- ===============================
+         INTRO SECTION
+    ================================ -->
+
+    <section class="intro">
+
+        <div class="intro-inner">
+
+
+            <h2>
+
+                | STYLE<br>
+                WITH IDENTITY |
+
+            </h2>
+
+
+            <p>
+
+                AK Turbanators brings together
+                traditional turban artistry and
+                contemporary styling — creating
+                a look that represents pride,
+                personality and identity.
+
+            </p>
+
+
+        </div>
+
+    </section>
+
+
+</body>
+
+</html>
