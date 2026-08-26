@@ -26,10 +26,9 @@
 
     <style>
 
-
-        /* ===============================
+        /* =====================================
            RESET
-        =============================== */
+        ===================================== */
 
         * {
             margin: 0;
@@ -44,25 +43,32 @@
 
 
         body {
+
             font-family: 'Montserrat', sans-serif;
+
             background: #eee8dc;
+
             color: #28231f;
+
             overflow-x: hidden;
+
         }
 
 
-        /* ===============================
+        /* =====================================
            HEADER
-        =============================== */
+        ===================================== */
 
         .header {
 
             height: 95px;
+
             width: 100%;
 
             position: absolute;
 
             top: 0;
+
             left: 0;
 
             z-index: 20;
@@ -75,25 +81,24 @@
 
             padding: 0 4.5%;
 
-            background:
-                rgba(239, 234, 224, 0.88);
+            background: rgba(239, 234, 224, 0.88);
 
-            backdrop-filter: blur(5px);
+            backdrop-filter: blur(8px);
 
-            -webkit-backdrop-filter: blur(5px);
+            border-bottom: 1px solid
+                rgba(50, 45, 40, 0.18);
 
-            border-bottom:
-                1px solid rgba(50, 45, 40, 0.18);
         }
 
 
-        /* ===============================
+        /* =====================================
            HAMBURGER
-        =============================== */
+        ===================================== */
 
         .hamburger {
 
             width: 34px;
+
             height: 25px;
 
             display: flex;
@@ -103,21 +108,24 @@
             justify-content: space-between;
 
             cursor: pointer;
+
         }
 
 
         .hamburger span {
 
             width: 100%;
+
             height: 1.5px;
 
             background: #302b27;
+
         }
 
 
-        /* ===============================
+        /* =====================================
            LOGO
-        =============================== */
+        ===================================== */
 
         .logo {
 
@@ -138,12 +146,13 @@
             letter-spacing: 5px;
 
             white-space: nowrap;
+
         }
 
 
-        /* ===============================
-           HEADER RIGHT
-        =============================== */
+        /* =====================================
+           RIGHT ICONS
+        ===================================== */
 
         .header-right {
 
@@ -152,26 +161,26 @@
             align-items: center;
 
             gap: 25px;
+
         }
 
 
-        /* ===============================
-           SEARCH ICON
-        =============================== */
+        /* SEARCH */
 
         .search {
 
-            width: 25px;
-            height: 25px;
+            width: 24px;
 
-            border:
-                1.5px solid #403a34;
+            height: 24px;
+
+            border: 1.5px solid #403a34;
 
             border-radius: 50%;
 
             position: relative;
 
             cursor: pointer;
+
         }
 
 
@@ -181,35 +190,37 @@
 
             position: absolute;
 
-            width: 10px;
+            width: 9px;
+
             height: 1.5px;
 
             background: #403a34;
 
-            right: -7px;
-            bottom: -3px;
+            right: -6px;
+
+            bottom: 0;
 
             transform: rotate(45deg);
+
         }
 
 
-        /* ===============================
-           BAG ICON
-        =============================== */
+        /* BAG */
 
         .bag {
 
-            width: 23px;
-            height: 23px;
+            width: 22px;
 
-            border:
-                1.5px solid #403a34;
+            height: 22px;
+
+            border: 1.5px solid #403a34;
 
             border-radius: 2px;
 
             position: relative;
 
             cursor: pointer;
+
         }
 
 
@@ -219,25 +230,26 @@
 
             position: absolute;
 
-            width: 10px;
-            height: 7px;
+            width: 9px;
 
-            border:
-                1.5px solid #403a34;
+            height: 6px;
+
+            border: 1.5px solid #403a34;
 
             border-bottom: none;
 
-            border-radius:
-                8px 8px 0 0;
+            border-radius: 8px 8px 0 0;
 
-            top: -8px;
+            top: -7px;
+
             left: 5px;
+
         }
 
 
-        /* ===============================
+        /* =====================================
            HERO SECTION
-        =============================== */
+        ===================================== */
 
         .hero {
 
@@ -256,25 +268,22 @@
             overflow: hidden;
 
 
-            /* MAIN BACKGROUND IMAGE */
+            /* HERO BACKGROUND IMAGE */
 
             background-image:
-                url("assets-turban-bg.JPG");
+                url("turban-bg.JPG");
 
 
             background-size: cover;
 
-            background-position:
-                center center;
+            background-position: center center;
 
-            background-repeat:
-                no-repeat;
+            background-repeat: no-repeat;
+
         }
 
 
-        /* ===============================
-           HERO OVERLAY
-        =============================== */
+        /* DARK OVERLAY */
 
         .hero::after {
 
@@ -288,12 +297,13 @@
                 rgba(0, 0, 0, 0.28);
 
             z-index: 1;
+
         }
 
 
-        /* ===============================
+        /* =====================================
            HERO CONTENT
-        =============================== */
+        ===================================== */
 
         .hero-content {
 
@@ -308,25 +318,25 @@
             width: 90%;
 
             max-width: 900px;
+
         }
 
 
-        /* ===============================
-           HERO BOX
-        =============================== */
+        /* =====================================
+           HERO TITLE BOX
+        ===================================== */
 
         .hero-box {
 
             display: inline-block;
 
-            padding:
-                27px 58px;
+            padding: 27px 58px;
 
-            border:
-                1px solid rgba(255, 255, 255, 0.9);
+            border: 1px solid
+                rgba(255, 255, 255, 0.9);
 
-            margin-bottom:
-                38px;
+            margin-bottom: 38px;
+
         }
 
 
@@ -339,18 +349,19 @@
             letter-spacing: 7px;
 
             white-space: nowrap;
+
         }
 
 
-        /* ===============================
+        /* =====================================
            TAGLINE
-        =============================== */
+        ===================================== */
 
         .tagline {
 
             font-size: 17px;
 
-            font-weight: 400;
+            font-weight: 500;
 
             letter-spacing: 5px;
 
@@ -358,12 +369,13 @@
 
             color:
                 rgba(255, 255, 255, 0.95);
+
         }
 
 
-        /* ===============================
+        /* =====================================
            INTRO SECTION
-        =============================== */
+        ===================================== */
 
         .intro {
 
@@ -377,20 +389,17 @@
 
             text-align: center;
 
-            padding:
-                120px 8%;
+            padding: 120px 8%;
+
         }
 
 
         .intro-inner {
 
-            max-width: 900px;
+            max-width: 950px;
+
         }
 
-
-        /* ===============================
-           INTRO HEADING
-        =============================== */
 
         .intro h2 {
 
@@ -405,172 +414,266 @@
 
             color: #40372f;
 
-            margin-bottom:
-                55px;
+            margin-bottom: 55px;
+
         }
 
 
-        /* ===============================
-           INTRO TEXT
-        =============================== */
+        /* SMALLER TEXT - SLIGHTLY BOLDER */
 
         .intro p {
 
-            max-width: 760px;
+            max-width: 780px;
 
             margin: auto;
 
-            font-size: 15px;
+            font-size: 16px;
 
             line-height: 2.1;
 
-            letter-spacing: 1.5px;
+            letter-spacing: 1.8px;
 
             font-weight: 500;
 
             color: #756b61;
+
         }
 
 
-        /* ===============================
-           STORIES SECTION
-        =============================== */
+        /* =====================================
+           GALLERY SECTION
+        ===================================== */
 
-        .stories-section {
+        .gallery-section {
 
-            background:
-                #6f5140;
+            background: #e8e1d4;
 
-            padding:
-                90px 0 100px;
+            padding: 100px 0 110px;
 
             overflow: hidden;
+
         }
 
 
-        /* ===============================
-           SLIDER
-        =============================== */
+        /* GALLERY TITLE */
 
-        .stories-slider {
+        .gallery-heading {
+
+            text-align: center;
+
+            margin-bottom: 55px;
+
+            padding: 0 20px;
+
+        }
+
+
+        .gallery-heading h2 {
+
+            font-size:
+                clamp(32px, 5vw, 58px);
+
+            font-weight: 300;
+
+            letter-spacing: 6px;
+
+            color: #40372f;
+
+            margin-bottom: 20px;
+
+        }
+
+
+        .gallery-heading p {
+
+            font-size: 14px;
+
+            font-weight: 500;
+
+            letter-spacing: 3px;
+
+            color: #756b61;
+
+            line-height: 1.8;
+
+        }
+
+
+        /* =====================================
+           SLIDER WRAPPER
+        ===================================== */
+
+        .slider-wrapper {
+
+            width: 100%;
+
+            position: relative;
+
+        }
+
+
+        /* =====================================
+           INSTAGRAM STYLE SLIDER
+        ===================================== */
+
+        .slider {
 
             display: flex;
 
             overflow-x: auto;
 
-            scroll-snap-type:
-                x mandatory;
+            scroll-snap-type: x mandatory;
 
             scroll-behavior: smooth;
 
-            gap: 22px;
+            gap: 25px;
 
-            padding:
-                0 8%;
+            padding: 10px
+                     max(20px, calc((100vw - 500px) / 2))
+                     30px;
+
+            -webkit-overflow-scrolling: touch;
 
             scrollbar-width: none;
 
-            -webkit-overflow-scrolling: touch;
         }
 
 
-        .stories-slider::-webkit-scrollbar {
+        .slider::-webkit-scrollbar {
 
             display: none;
+
         }
 
 
-        /* ===============================
+        /* =====================================
            EACH SLIDE
-        =============================== */
+        ===================================== */
 
-        .story-slide {
+        .slide {
 
-            flex:
-                0 0 82%;
+            flex: 0 0 min(500px, 85vw);
 
-            max-width: 480px;
+            scroll-snap-align: center;
 
-            scroll-snap-align:
-                center;
+            background: #f5f1e9;
 
-            background:
-                #5d4335;
+            border-radius: 4px;
 
             overflow: hidden;
 
             box-shadow:
-                0 15px 40px
-                rgba(0, 0, 0, 0.25);
+                0 18px 50px
+                rgba(60, 48, 38, 0.18);
+
         }
 
 
-        /* ===============================
-           STORY IMAGE
-        =============================== */
+        /* =====================================
+           SLIDE IMAGE
+        ===================================== */
 
-        .story-slide img {
+        .slide-image {
 
             width: 100%;
 
-            height: 560px;
+            height: 620px;
+
+            overflow: hidden;
+
+            background: #d8d0c2;
+
+        }
+
+
+        .slide-image img {
+
+            width: 100%;
+
+            height: 100%;
 
             object-fit: cover;
 
-            object-position: center;
-
             display: block;
+
+            transition:
+                transform 0.6s ease;
+
         }
 
 
-        /* ===============================
-           STORY TEXT
-        =============================== */
+        .slide:hover img {
 
-        .story-text {
+            transform: scale(1.03);
 
-            padding:
-                30px 25px 35px;
+        }
+
+
+        /* =====================================
+           SLIDE TEXT
+        ===================================== */
+
+        .slide-text {
+
+            padding: 30px 28px 35px;
 
             text-align: center;
 
-            color: #f3e8da;
         }
 
 
-        .story-text h3 {
+        .slide-number {
 
-            font-size: 18px;
+            display: block;
 
-            font-weight: 500;
+            font-size: 11px;
 
-            letter-spacing: 3.5px;
+            letter-spacing: 4px;
 
-            margin-bottom:
-                17px;
+            font-weight: 600;
+
+            color: #9a8c7c;
+
+            margin-bottom: 14px;
+
         }
 
 
-        .story-text p {
+        .slide-text h3 {
 
-            font-size: 13px;
+            font-size: 22px;
 
-            font-weight: 500;
+            font-weight: 400;
 
-            letter-spacing: 1px;
+            letter-spacing: 2px;
+
+            color: #40372f;
+
+            margin-bottom: 16px;
+
+        }
+
+
+        .slide-text p {
+
+            font-size: 14px;
 
             line-height: 1.9;
 
-            color:
-                rgba(243, 232, 218, 0.82);
+            letter-spacing: 1px;
+
+            font-weight: 500;
+
+            color: #756b61;
+
         }
 
 
-        /* ===============================
-           SLIDER DOTS
-        =============================== */
+        /* =====================================
+           PREVIOUS / NEXT BUTTONS
+        ===================================== */
 
-        .slider-dots {
+        .slider-buttons {
 
             display: flex;
 
@@ -578,42 +681,148 @@
 
             align-items: center;
 
-            gap: 12px;
+            gap: 20px;
 
-            margin-top:
-                32px;
+            margin-top: 15px;
+
+        }
+
+
+        .slider-btn {
+
+            width: 55px;
+
+            height: 55px;
+
+            border-radius: 50%;
+
+            border: 1px solid #756b61;
+
+            background: transparent;
+
+            color: #40372f;
+
+            font-size: 26px;
+
+            cursor: pointer;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            transition:
+                all 0.3s ease;
+
+        }
+
+
+        .slider-btn:hover {
+
+            background: #40372f;
+
+            color: #ffffff;
+
+        }
+
+
+        /* =====================================
+           SLIDER DOTS
+        ===================================== */
+
+        .dots {
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            gap: 10px;
+
+            margin-top: 28px;
+
         }
 
 
         .dot {
 
-            width: 7px;
+            width: 8px;
 
-            height: 7px;
+            height: 8px;
 
             border-radius: 50%;
 
-            background:
-                rgba(255, 255, 255, 0.35);
+            background: #b8ada0;
+
+            border: none;
+
+            cursor: pointer;
 
             transition:
-                0.3s ease;
+                all 0.3s ease;
+
         }
 
 
         .dot.active {
 
-            background:
-                #f3e8da;
+            width: 28px;
 
-            transform:
-                scale(1.3);
+            border-radius: 20px;
+
+            background: #40372f;
+
         }
 
 
-        /* ===============================
+        /* =====================================
+           FOOTER
+        ===================================== */
+
+        footer {
+
+            background: #40372f;
+
+            color: #eee8dc;
+
+            text-align: center;
+
+            padding: 60px 20px;
+
+        }
+
+
+        footer h3 {
+
+            font-size: 24px;
+
+            font-weight: 400;
+
+            letter-spacing: 5px;
+
+            margin-bottom: 18px;
+
+        }
+
+
+        footer p {
+
+            font-size: 13px;
+
+            letter-spacing: 2px;
+
+            font-weight: 500;
+
+            opacity: 0.8;
+
+        }
+
+
+        /* =====================================
            MOBILE VERSION
-        =============================== */
+        ===================================== */
 
         @media (max-width: 768px) {
 
@@ -624,26 +833,24 @@
 
                 height: 82px;
 
-                padding:
-                    0 7%;
+                padding: 0 7%;
+
             }
 
-
-            /* LOGO */
 
             .logo {
 
                 font-size: 18px;
 
                 letter-spacing: 3px;
+
             }
 
-
-            /* HEADER ICONS */
 
             .header-right {
 
                 gap: 17px;
+
             }
 
 
@@ -652,6 +859,7 @@
                 width: 20px;
 
                 height: 20px;
+
             }
 
 
@@ -660,6 +868,7 @@
                 width: 19px;
 
                 height: 19px;
+
             }
 
 
@@ -668,6 +877,7 @@
                 width: 28px;
 
                 height: 21px;
+
             }
 
 
@@ -679,15 +889,8 @@
 
                 min-height: 700px;
 
-                background-position:
-                    center center;
-            }
+                background-position: center center;
 
-
-            .hero::after {
-
-                background:
-                    rgba(0, 0, 0, 0.28);
             }
 
 
@@ -695,11 +898,10 @@
 
             .hero-box {
 
-                padding:
-                    19px 25px;
+                padding: 19px 25px;
 
-                margin-bottom:
-                    30px;
+                margin-bottom: 30px;
+
             }
 
 
@@ -708,6 +910,7 @@
                 font-size: 16px;
 
                 letter-spacing: 4px;
+
             }
 
 
@@ -720,6 +923,7 @@
                 letter-spacing: 3px;
 
                 line-height: 2;
+
             }
 
 
@@ -727,19 +931,19 @@
 
             .intro {
 
-                padding:
-                    90px 8%;
+                padding: 90px 8%;
+
             }
 
 
             .intro h2 {
 
-                font-size: 48px;
+                font-size: 45px;
 
                 letter-spacing: 2px;
 
-                margin-bottom:
-                    40px;
+                margin-bottom: 40px;
+
             }
 
 
@@ -747,103 +951,142 @@
 
                 font-size: 13px;
 
-                line-height: 2;
+                line-height: 2.1;
 
-                letter-spacing: 1px;
+                letter-spacing: 1.2px;
 
                 font-weight: 500;
+
             }
 
 
-            /* STORIES */
+            /* GALLERY */
 
-            .stories-section {
+            .gallery-section {
 
-                padding:
-                    70px 0 80px;
+                padding: 75px 0 90px;
+
             }
 
 
-            .stories-slider {
+            .gallery-heading {
 
-                gap: 16px;
+                margin-bottom: 35px;
 
-                padding:
-                    0 7%;
             }
 
 
-            .story-slide {
+            .gallery-heading h2 {
 
-                flex:
-                    0 0 88%;
-            }
-
-
-            .story-slide img {
-
-                height: 520px;
-            }
-
-
-            .story-text {
-
-                padding:
-                    25px 20px 30px;
-            }
-
-
-            .story-text h3 {
-
-                font-size: 15px;
+                font-size: 30px;
 
                 letter-spacing: 3px;
 
-                margin-bottom:
-                    15px;
             }
 
 
-            .story-text p {
+            .gallery-heading p {
+
+                font-size: 11px;
+
+                letter-spacing: 2px;
+
+            }
+
+
+            .slider {
+
+                gap: 15px;
+
+                padding-left: 8vw;
+
+                padding-right: 8vw;
+
+            }
+
+
+            .slide {
+
+                flex: 0 0 84vw;
+
+            }
+
+
+            .slide-image {
+
+                height: 520px;
+
+            }
+
+
+            .slide-text {
+
+                padding: 25px 20px 30px;
+
+            }
+
+
+            .slide-text h3 {
+
+                font-size: 18px;
+
+            }
+
+
+            .slide-text p {
 
                 font-size: 12px;
 
                 line-height: 1.9;
 
-                letter-spacing: 0.8px;
             }
+
+
+            .slider-btn {
+
+                width: 48px;
+
+                height: 48px;
+
+                font-size: 22px;
+
+            }
+
 
         }
 
 
-        /* ===============================
+        /* =====================================
            SMALL MOBILE DEVICES
-        =============================== */
+        ===================================== */
 
         @media (max-width: 420px) {
 
 
             .logo {
 
-                font-size: 16px;
+                font-size: 15px;
 
                 letter-spacing: 2px;
+
             }
 
 
-            .story-slide img {
+            .header-right {
+
+                gap: 14px;
+
+            }
+
+
+            .slide-image {
 
                 height: 500px;
+
             }
 
-
-            .intro h2 {
-
-                font-size: 42px;
-            }
 
         }
-
 
     </style>
 
@@ -853,9 +1096,9 @@
 <body>
 
 
-    <!-- ===============================
+    <!-- =====================================
          HEADER
-    =============================== -->
+    ====================================== -->
 
     <header class="header">
 
@@ -875,14 +1118,15 @@
 
         <!-- LOGO -->
 
-        <a href="#" class="logo">
+        <a href="#"
+           class="logo">
 
             AK TURBANATORS
 
         </a>
 
 
-        <!-- RIGHT ICONS -->
+        <!-- SEARCH + BAG -->
 
         <div class="header-right">
 
@@ -897,9 +1141,9 @@
 
 
 
-    <!-- ===============================
+    <!-- =====================================
          HERO SECTION
-    =============================== -->
+    ====================================== -->
 
     <section class="hero">
 
@@ -910,7 +1154,9 @@
             <div class="hero-box">
 
                 <h1>
+
                     AK TURBANATORS
+
                 </h1>
 
             </div>
@@ -930,9 +1176,9 @@
 
 
 
-    <!-- ===============================
+    <!-- =====================================
          STYLE WITH IDENTITY
-    =============================== -->
+    ====================================== -->
 
     <section class="intro">
 
@@ -942,36 +1188,31 @@
 
             <h2>
 
-                | STYLE<br>
-                WITH IDENTITY |
+                STYLE<br>
+                WITH IDENTITY
 
             </h2>
 
 
             <p>
 
-                AK Turbanators brings together the timeless beauty of
-                traditional turban artistry with a modern understanding
-                of personal style. Every turban is more than an accessory —
-                it is a reflection of heritage, confidence, personality
-                and identity.
-
+                AK Turbanators brings together the timeless
+                artistry of traditional turban styling with a
+                modern sense of individuality and expression.
+                Every turban is more than a piece of fabric —
+                it is a symbol of heritage, confidence, pride
+                and personal identity.
                 <br><br>
-
-                We believe that tradition should never be left behind.
-                Instead, it should evolve with every generation while
-                continuing to carry the pride and values that make it
-                meaningful. Through carefully crafted styling and attention
-                to every detail, we create looks that respect tradition
-                while embracing individuality.
-
+                Our approach respects the traditions that have
+                been carried through generations while creating
+                styles that feel relevant to the present.
+                From elegant ceremonial looks to contemporary
+                fashion statements, every detail is carefully
+                shaped to complement the individual wearing it.
                 <br><br>
-
-                From classic and royal styles to contemporary expressions,
-                every creation is designed to tell its own story. At
-                AK Turbanators, style is not simply about appearance —
-                it is about carrying your identity with confidence,
-                pride and elegance.
+                Because true style is not about following
+                everyone else. It is about carrying your story,
+                your culture and your personality with confidence.
 
             </p>
 
@@ -983,138 +1224,246 @@
 
 
 
-    <!-- ===============================
-         IMAGE STORIES / SLIDER
-    =============================== -->
+    <!-- =====================================
+         IMAGE GALLERY / INSTAGRAM SLIDER
+    ====================================== -->
 
-    <section class="stories-section">
-
-
-        <div class="stories-slider"
-             id="storiesSlider">
+    <section class="gallery-section">
 
 
-            <!-- ===============================
-                 SLIDE 1
-            =============================== -->
+        <!-- SECTION HEADING -->
 
-            <div class="story-slide">
+        <div class="gallery-heading">
 
 
-                <img src="Image.1.PNG"
-                     alt="AK Turbanators Traditional Style">
+            <h2>
+
+                OUR ARTISTRY
+
+            </h2>
 
 
-                <div class="story-text">
+            <p>
 
+                SWIPE THROUGH THE STORIES
 
-                    <h3>
-                        TRADITION WITH PRIDE
-                    </h3>
-
-
-                    <p>
-
-                        Every turban carries a story —
-                        a connection between heritage,
-                        confidence and timeless identity.
-
-                    </p>
-
-
-                </div>
-
-
-            </div>
-
-
-
-            <!-- ===============================
-                 SLIDE 2
-            =============================== -->
-
-            <div class="story-slide">
-
-
-                <img src="Image.2.PNG"
-                     alt="AK Turbanators Heritage Style">
-
-
-                <div class="story-text">
-
-
-                    <h3>
-                        HERITAGE IN EVERY DETAIL
-                    </h3>
-
-
-                    <p>
-
-                        Inspired by culture, architecture
-                        and tradition, every detail reflects
-                        the beauty of a timeless legacy.
-
-                    </p>
-
-
-                </div>
-
-
-            </div>
-
-
-
-            <!-- ===============================
-                 SLIDE 3
-            =============================== -->
-
-            <div class="story-slide">
-
-
-                <img src="Image.3.JPG"
-                     alt="AK Turbanators Royal Style">
-
-
-                <div class="story-text">
-
-
-                    <h3>
-                        STYLE WITH IDENTITY
-                    </h3>
-
-
-                    <p>
-
-                        A blend of royal tradition and
-                        contemporary confidence — created
-                        for those who carry their identity
-                        with pride and elegance.
-
-                    </p>
-
-
-                </div>
-
-
-            </div>
+            </p>
 
 
         </div>
 
 
 
-        <!-- ===============================
-             SLIDER DOTS
-        =============================== -->
+        <!-- SLIDER -->
 
-        <div class="slider-dots">
+        <div class="slider-wrapper">
 
 
-            <span class="dot active"></span>
+            <div class="slider"
+                 id="imageSlider">
 
-            <span class="dot"></span>
 
-            <span class="dot"></span>
+                <!-- =========================
+                     SLIDE 1
+                ========================== -->
+
+                <article class="slide">
+
+
+                    <div class="slide-image">
+
+                        <img src="Image.1.PNG"
+                             alt="AK Turbanators Style One">
+
+                    </div>
+
+
+                    <div class="slide-text">
+
+
+                        <span class="slide-number">
+
+                            01 / 03
+
+                        </span>
+
+
+                        <h3>
+
+                            Tradition With Presence
+
+                        </h3>
+
+
+                        <p>
+
+                            A style that carries heritage with
+                            confidence. Every fold, every detail
+                            and every expression reflects the
+                            strength of tradition and the power
+                            of individuality.
+
+                        </p>
+
+
+                    </div>
+
+
+                </article>
+
+
+
+                <!-- =========================
+                     SLIDE 2
+                ========================== -->
+
+                <article class="slide">
+
+
+                    <div class="slide-image">
+
+                        <img src="Image.2.PNG"
+                             alt="AK Turbanators Style Two">
+
+                    </div>
+
+
+                    <div class="slide-text">
+
+
+                        <span class="slide-number">
+
+                            02 / 03
+
+                        </span>
+
+
+                        <h3>
+
+                            Heritage In Every Detail
+
+                        </h3>
+
+
+                        <p>
+
+                            Inspired by timeless architecture,
+                            culture and craftsmanship, this style
+                            celebrates the beauty of tradition
+                            while creating a look that feels
+                            distinctive and unforgettable.
+
+                        </p>
+
+
+                    </div>
+
+
+                </article>
+
+
+
+                <!-- =========================
+                     SLIDE 3
+                ========================== -->
+
+                <article class="slide">
+
+
+                    <div class="slide-image">
+
+                        <img src="Image.3.JPG"
+                             alt="AK Turbanators Royal Style">
+
+                    </div>
+
+
+                    <div class="slide-text">
+
+
+                        <span class="slide-number">
+
+                            03 / 03
+
+                        </span>
+
+
+                        <h3>
+
+                            Royalty In Identity
+
+                        </h3>
+
+
+                        <p>
+
+                            A statement of elegance, confidence
+                            and individuality. Inspired by royal
+                            heritage and detailed craftsmanship,
+                            this look transforms tradition into
+                            a powerful expression of personal style.
+
+                        </p>
+
+
+                    </div>
+
+
+                </article>
+
+
+            </div>
+
+
+
+            <!-- MANUAL BUTTONS -->
+
+            <div class="slider-buttons">
+
+
+                <button class="slider-btn"
+                        onclick="previousSlide()"
+                        aria-label="Previous image">
+
+                    &#8592;
+
+                </button>
+
+
+                <button class="slider-btn"
+                        onclick="nextSlide()"
+                        aria-label="Next image">
+
+                    &#8594;
+
+                </button>
+
+
+            </div>
+
+
+
+            <!-- DOTS -->
+
+            <div class="dots">
+
+
+                <button class="dot active"
+                        onclick="goToSlide(0)"
+                        aria-label="Slide 1"></button>
+
+
+                <button class="dot"
+                        onclick="goToSlide(1)"
+                        aria-label="Slide 2"></button>
+
+
+                <button class="dot"
+                        onclick="goToSlide(2)"
+                        aria-label="Slide 3"></button>
+
+
+            </div>
 
 
         </div>
@@ -1124,95 +1473,252 @@
 
 
 
-    <!-- ===============================
-         JAVASCRIPT
-         ACTIVE SLIDER DOTS
-    =============================== -->
+    <!-- =====================================
+         FOOTER
+    ====================================== -->
+
+    <footer>
+
+
+        <h3>
+
+            AK TURBANATORS
+
+        </h3>
+
+
+        <p>
+
+            THE ART OF TURBAN STYLING
+
+        </p>
+
+
+    </footer>
+
+
+
+    <!-- =====================================
+         JAVASCRIPT FOR SLIDER
+    ====================================== -->
 
     <script>
 
 
         const slider =
-            document.getElementById("storiesSlider");
+            document.getElementById("imageSlider");
+
+
+        const slides =
+            document.querySelectorAll(".slide");
 
 
         const dots =
             document.querySelectorAll(".dot");
 
 
+        let currentSlide = 0;
+
+
+        /* ===============================
+           GO TO SLIDE
+        =============================== */
+
+        function goToSlide(index) {
+
+
+            currentSlide = index;
+
+
+            const slide =
+                slides[currentSlide];
+
+
+            slider.scrollTo({
+
+                left:
+                    slide.offsetLeft
+                    -
+                    (
+                        slider.offsetWidth
+                        -
+                        slide.offsetWidth
+                    ) / 2,
+
+                behavior:
+                    "smooth"
+
+            });
+
+
+            updateDots();
+
+        }
+
+
+
+        /* ===============================
+           NEXT SLIDE
+        =============================== */
+
+        function nextSlide() {
+
+
+            currentSlide++;
+
+
+            if (
+                currentSlide
+                >=
+                slides.length
+            ) {
+
+                currentSlide = 0;
+
+            }
+
+
+            goToSlide(currentSlide);
+
+        }
+
+
+
+        /* ===============================
+           PREVIOUS SLIDE
+        =============================== */
+
+        function previousSlide() {
+
+
+            currentSlide--;
+
+
+            if (
+                currentSlide < 0
+            ) {
+
+                currentSlide =
+                    slides.length - 1;
+
+            }
+
+
+            goToSlide(currentSlide);
+
+        }
+
+
+
+        /* ===============================
+           UPDATE DOTS
+        =============================== */
+
+        function updateDots() {
+
+
+            dots.forEach(
+
+                (dot, index) => {
+
+
+                    if (
+                        index === currentSlide
+                    ) {
+
+                        dot.classList.add(
+                            "active"
+                        );
+
+                    }
+
+                    else {
+
+                        dot.classList.remove(
+                            "active"
+                        );
+
+                    }
+
+
+                }
+
+            );
+
+
+        }
+
+
+
+        /* =================================
+           UPDATE DOTS WHEN USER SWIPES
+        ================================== */
+
         slider.addEventListener(
+
             "scroll",
-            function () {
+
+            () => {
 
 
-                const slides =
-                    document.querySelectorAll(
-                        ".story-slide"
-                    );
+                let closestIndex = 0;
 
-
-                let activeIndex = 0;
-
-                let smallestDistance =
+                let closestDistance =
                     Infinity;
 
 
                 slides.forEach(
-                    function (slide, index) {
+
+                    (slide, index) => {
 
 
                         const distance =
                             Math.abs(
-                                slide.getBoundingClientRect().left -
-                                window.innerWidth / 2 +
-                                slide.offsetWidth / 2
+
+                                slider.scrollLeft
+                                -
+                                (
+                                    slide.offsetLeft
+                                    -
+                                    (
+                                        slider.offsetWidth
+                                        -
+                                        slide.offsetWidth
+                                    ) / 2
+                                )
+
                             );
 
 
                         if (
-                            distance <
-                            smallestDistance
+                            distance
+                            <
+                            closestDistance
                         ) {
 
-                            smallestDistance =
+                            closestDistance =
                                 distance;
 
-                            activeIndex =
+                            closestIndex =
                                 index;
 
                         }
 
 
                     }
+
                 );
 
 
-                dots.forEach(
-                    function (dot, index) {
+                currentSlide =
+                    closestIndex;
 
 
-                        dot.classList.remove(
-                            "active"
-                        );
-
-
-                        if (
-                            index ===
-                            activeIndex
-                        ) {
-
-                            dot.classList.add(
-                                "active"
-                            );
-
-                        }
-
-
-                    }
-                );
+                updateDots();
 
 
             }
+
         );
 
 
