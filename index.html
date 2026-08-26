@@ -36,11 +36,9 @@
             box-sizing: border-box;
         }
 
-
         html {
             scroll-behavior: smooth;
         }
-
 
         body {
             font-family: 'Montserrat', sans-serif;
@@ -54,7 +52,6 @@
         =============================== */
 
         .header {
-
             height: 95px;
             width: 100%;
 
@@ -71,11 +68,9 @@
             padding: 0 4.5%;
 
             background: rgba(239, 234, 224, 0.88);
-
             backdrop-filter: blur(5px);
 
-            border-bottom: 1px solid
-                rgba(50, 45, 40, 0.18);
+            border-bottom: 1px solid rgba(50, 45, 40, 0.18);
         }
 
 
@@ -84,7 +79,6 @@
         =============================== */
 
         .hamburger {
-
             width: 34px;
             height: 25px;
 
@@ -95,12 +89,9 @@
             cursor: pointer;
         }
 
-
         .hamburger span {
-
             width: 100%;
             height: 1.5px;
-
             background: #302b27;
         }
 
@@ -110,9 +101,7 @@
         =============================== */
 
         .logo {
-
             position: absolute;
-
             left: 50%;
 
             transform: translateX(-50%);
@@ -122,7 +111,6 @@
             color: #403a34;
 
             font-size: 26px;
-
             font-weight: 400;
 
             letter-spacing: 5px;
@@ -136,11 +124,8 @@
         =============================== */
 
         .header-right {
-
             display: flex;
-
             align-items: center;
-
             gap: 25px;
         }
 
@@ -148,22 +133,16 @@
         /* SEARCH ICON */
 
         .search {
-
             width: 24px;
             height: 24px;
 
             border: 1.5px solid #403a34;
-
             border-radius: 50%;
 
             position: relative;
-
-            cursor: pointer;
         }
 
-
         .search::after {
-
             content: "";
 
             position: absolute;
@@ -183,22 +162,16 @@
         /* BAG ICON */
 
         .bag {
-
             width: 22px;
             height: 22px;
 
             border: 1.5px solid #403a34;
-
             border-radius: 2px;
 
             position: relative;
-
-            cursor: pointer;
         }
 
-
         .bag::before {
-
             content: "";
 
             position: absolute;
@@ -207,7 +180,6 @@
             height: 6px;
 
             border: 1.5px solid #403a34;
-
             border-bottom: none;
 
             border-radius: 8px 8px 0 0;
@@ -222,59 +194,42 @@
         =============================== */
 
         .hero {
-
             height: 100vh;
-
             min-height: 650px;
 
             position: relative;
 
             display: flex;
-
             align-items: center;
-
             justify-content: center;
 
             overflow: hidden;
 
-            /* BACKGROUND IMAGE */
-
-            background-image:
-                url("turban-bg.JPG");
+            background-image: url("turban-bg.JPG");
 
             background-size: cover;
-
             background-position: center center;
-
             background-repeat: no-repeat;
         }
 
 
-        /* ===============================
-           DARK OVERLAY
-        =============================== */
+        /* DARK OVERLAY */
 
         .hero::after {
-
             content: "";
 
             position: absolute;
-
             inset: 0;
 
-            background:
-                rgba(0, 0, 0, 0.25);
+            background: rgba(0, 0, 0, 0.25);
 
             z-index: 1;
         }
 
 
-        /* ===============================
-           HERO CONTENT
-        =============================== */
+        /* HERO CONTENT */
 
         .hero-content {
-
             position: relative;
 
             z-index: 5;
@@ -284,32 +239,23 @@
             color: white;
 
             width: 90%;
-
             max-width: 800px;
         }
 
 
-        /* ===============================
-           HERO TITLE BOX
-        =============================== */
+        /* HERO BOX */
 
         .hero-box {
-
             display: inline-block;
 
             padding: 27px 58px;
 
-            border: 1px solid
-                rgba(255, 255, 255, 0.9);
+            border: 1px solid rgba(255, 255, 255, 0.9);
 
             margin-bottom: 38px;
         }
 
-
-        /* LARGE HERO TEXT - LIGHT */
-
         .hero-box h1 {
-
             font-size: 24px;
 
             font-weight: 300;
@@ -320,10 +266,9 @@
         }
 
 
-        /* SMALL TAGLINE - BOLDER */
+        /* SMALL TAGLINE — SLIGHTLY BOLD */
 
         .tagline {
-
             font-size: 17px;
 
             font-weight: 400;
@@ -332,17 +277,15 @@
 
             line-height: 1.8;
 
-            color:
-                rgba(255, 255, 255, 0.95);
+            color: rgba(255, 255, 255, 0.95);
         }
 
 
         /* ===============================
-           STYLE WITH IDENTITY SECTION
+           STYLE WITH IDENTITY
         =============================== */
 
         .intro {
-
             background: #eee8dc;
 
             display: flex;
@@ -354,19 +297,12 @@
             padding: 120px 8%;
         }
 
-
         .intro-inner {
-
             max-width: 900px;
         }
 
-
-        /* LARGE HEADING - LIGHT */
-
         .intro h2 {
-
-            font-size:
-                clamp(48px, 7vw, 82px);
+            font-size: clamp(48px, 7vw, 82px);
 
             font-weight: 300;
 
@@ -379,11 +315,9 @@
             margin-bottom: 55px;
         }
 
-
-        /* SMALL PARAGRAPH - BOLDER */
+        /* SMALL PARAGRAPH — SLIGHTLY BOLD */
 
         .intro p {
-
             max-width: 800px;
 
             margin: auto;
@@ -401,56 +335,148 @@
 
 
         /* ===============================
+           IMAGE SECTION
+        =============================== */
+
+        .gallery-section {
+            background: #e7dfd2;
+
+            padding: 110px 8%;
+
+            text-align: center;
+        }
+
+
+        .gallery-heading {
+            margin-bottom: 55px;
+        }
+
+
+        .gallery-heading h2 {
+            font-size: clamp(38px, 5vw, 65px);
+
+            font-weight: 300;
+
+            letter-spacing: 4px;
+
+            color: #40372f;
+
+            margin-bottom: 20px;
+        }
+
+
+        .gallery-heading p {
+            font-size: 14px;
+
+            font-weight: 400;
+
+            letter-spacing: 2px;
+
+            color: #756b61;
+        }
+
+
+        /* ===============================
+           IMAGE CARD
+        =============================== */
+
+        .slide {
+            max-width: 1000px;
+
+            margin: auto;
+
+            background: #eee8dc;
+
+            padding-bottom: 35px;
+        }
+
+
+        /* YOUR IMAGE */
+
+        .slide img {
+            width: 100%;
+
+            height: 700px;
+
+            display: block;
+
+            object-fit: cover;
+
+            object-position: center center;
+        }
+
+
+        /* ===============================
+           TEXT UNDER IMAGE
+        =============================== */
+
+        .slide-content {
+            padding: 35px 30px 0;
+        }
+
+
+        .slide-content h3 {
+            font-size: 16px;
+
+            font-weight: 400;
+
+            letter-spacing: 3px;
+
+            color: #40372f;
+
+            margin-bottom: 18px;
+        }
+
+
+        .slide-content p {
+            font-size: 14px;
+
+            font-weight: 400;
+
+            letter-spacing: 1px;
+
+            line-height: 2;
+
+            color: #756b61;
+
+            max-width: 650px;
+
+            margin: auto;
+        }
+
+
+        /* ===============================
            MOBILE VERSION
         =============================== */
 
         @media (max-width: 768px) {
 
-
             .header {
-
                 height: 82px;
-
                 padding: 0 7%;
             }
 
-
             .logo {
-
                 font-size: 18px;
-
                 letter-spacing: 3px;
-
-                font-weight: 400;
             }
 
-
             .header-right {
-
                 gap: 17px;
             }
 
-
             .search {
-
                 width: 20px;
-
                 height: 20px;
             }
 
-
             .bag {
-
                 width: 19px;
-
                 height: 19px;
             }
 
-
             .hamburger {
-
                 width: 28px;
-
                 height: 21px;
             }
 
@@ -458,84 +484,97 @@
             /* HERO */
 
             .hero {
-
                 height: 100svh;
-
                 min-height: 700px;
 
                 background-position: center center;
             }
 
-
-            /* HERO BOX */
-
             .hero-box {
-
                 padding: 19px 25px;
-
                 margin-bottom: 30px;
             }
 
-
-            /* LARGE HERO TEXT - LIGHT */
-
             .hero-box h1 {
-
                 font-size: 16px;
-
                 letter-spacing: 4px;
-
-                font-weight: 300;
             }
-
-
-            /* SMALL TAGLINE - BOLDER */
 
             .tagline {
-
                 font-size: 12px;
-
                 letter-spacing: 3px;
-
                 line-height: 2;
-
-                font-weight: 400;
             }
 
 
-            /* STYLE WITH IDENTITY */
+            /* INTRO */
 
             .intro {
-
                 padding: 90px 8%;
             }
 
-
-            /* LARGE HEADING - LIGHT */
-
             .intro h2 {
-
                 font-size: 48px;
 
                 letter-spacing: 2px;
 
                 margin-bottom: 40px;
-
-                font-weight: 300;
             }
 
-
-            /* SMALL PARAGRAPH - BOLDER */
-
             .intro p {
-
                 font-size: 13px;
 
                 line-height: 2.1;
 
                 letter-spacing: 1px;
+            }
 
-                font-weight: 400;
+
+            /* IMAGE SECTION */
+
+            .gallery-section {
+                padding: 80px 7%;
+            }
+
+            .gallery-heading {
+                margin-bottom: 40px;
+            }
+
+            .gallery-heading h2 {
+                font-size: 38px;
+                letter-spacing: 3px;
+            }
+
+            .gallery-heading p {
+                font-size: 12px;
+                letter-spacing: 1.5px;
+            }
+
+
+            .slide img {
+                height: 560px;
+
+                object-fit: cover;
+
+                object-position: center center;
+            }
+
+
+            .slide-content {
+                padding: 25px 20px 0;
+            }
+
+            .slide-content h3 {
+                font-size: 14px;
+                letter-spacing: 2px;
+            }
+
+            .slide-content p {
+                font-size: 13px;
+
+                line-height: 2;
+
+                letter-spacing: 0.8px;
             }
 
         }
@@ -550,12 +589,9 @@
 
     <!-- ===============================
          HEADER
-    ================================ -->
+    =============================== -->
 
     <header class="header">
-
-
-        <!-- HAMBURGER -->
 
         <div class="hamburger">
 
@@ -566,16 +602,12 @@
         </div>
 
 
-        <!-- LOGO -->
-
         <a href="#" class="logo">
 
             AK TURBANATORS
 
         </a>
 
-
-        <!-- SEARCH + BAG -->
 
         <div class="header-right">
 
@@ -585,20 +617,17 @@
 
         </div>
 
-
     </header>
 
 
 
     <!-- ===============================
          HERO SECTION
-    ================================ -->
+    =============================== -->
 
     <section class="hero">
 
-
         <div class="hero-content">
-
 
             <div class="hero-box">
 
@@ -613,23 +642,19 @@
 
             </p>
 
-
         </div>
-
 
     </section>
 
 
 
     <!-- ===============================
-         STYLE WITH IDENTITY SECTION
-    ================================ -->
+         STYLE WITH IDENTITY
+    =============================== -->
 
     <section class="intro">
 
-
         <div class="intro-inner">
-
 
             <h2>
 
@@ -645,51 +670,82 @@
                 an accessory. It is a powerful symbol of heritage, honour,
                 confidence, individuality and identity. For generations, the
                 art of turban styling has carried stories, traditions and
-                values, with every fold and every style reflecting the
-                personality of the person who wears it.
+                values, with every fold reflecting the personality of the
+                person who wears it.
 
                 <br><br>
 
-                Our journey is built on a deep respect for this timeless
-                tradition while embracing the creativity and elegance of
-                contemporary styling. We understand that every individual is
-                unique, and every occasion deserves a style that feels
-                personal, meaningful and unforgettable. That is why we
-                approach every turban with care, precision and attention to
-                detail.
+                Our journey is built on a deep respect for timeless tradition
+                while embracing the creativity and elegance of contemporary
+                styling. Every individual is unique, and every occasion
+                deserves a style that feels personal, meaningful and
+                unforgettable.
 
                 <br><br>
 
                 From traditional styles that honour cultural heritage to
-                modern and distinctive designs that make a bold statement,
-                AK Turbanators brings together artistry, creativity and
-                craftsmanship. Each style is created to complement not only
-                an outfit, but also the confidence and character of the
-                person wearing it.
+                distinctive designs that make a bold statement, AK Turbanators
+                brings together artistry, creativity and craftsmanship.
 
                 <br><br>
 
-                Whether it is a wedding, a celebration, a special occasion
-                or a moment that deserves to be remembered, we believe that
-                the perfect turban has the power to transform a look and
-                create a lasting impression. Our passion lies in creating
-                styles that feel elegant, comfortable and truly personal.
-
-                <br><br>
-
-                At AK Turbanators, tradition inspires us, creativity drives
-                us and individuality defines our work. We celebrate the
-                beauty of heritage while giving every style a modern
-                expression. Because true style is not about simply following
-                trends — it is about wearing your story with confidence,
-                carrying your identity with pride and expressing yourself in
-                a way that is uniquely your own.
+                Tradition inspires us, creativity drives us and individuality
+                defines our work. True style is about wearing your story with
+                confidence and carrying your identity with pride.
 
             </p>
 
+        </div>
+
+    </section>
+
+
+
+    <!-- ===============================
+         OUR ART - IMAGE 1 ONLY
+    =============================== -->
+
+    <section class="gallery-section">
+
+        <div class="gallery-heading">
+
+            <h2>| OUR ART |</h2>
+
+            <p>
+                Stories woven through every style.
+            </p>
 
         </div>
 
+
+        <!-- YOUR IMAGE: Image.1.PNG -->
+
+        <div class="slide">
+
+            <img src="Image.1.PNG"
+                 alt="AK Turbanators Traditional Style">
+
+
+            <div class="slide-content">
+
+                <h3>
+                    TRADITION WITH PRIDE
+                </h3>
+
+
+                <p>
+
+                    Tradition is not something we leave behind.
+                    It is something we carry forward with pride,
+                    honour and confidence — preserving the beauty
+                    of our heritage while creating memories for
+                    generations to come.
+
+                </p>
+
+            </div>
+
+        </div>
 
     </section>
 
